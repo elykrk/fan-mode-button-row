@@ -93,7 +93,7 @@ class CustomFanModeRow extends LitElement {
 				margin-left: 2px;
 				margin-right: 2px;
 				background-color: var(--card-background-color);
-				border: 1px solid var(--divider-color); 
+				border: 1px solid lightgrey; 
 				border-radius: 4px;
 				font-size: 10px !important;
 				color: inherit;
