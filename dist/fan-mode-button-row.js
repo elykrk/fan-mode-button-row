@@ -262,17 +262,17 @@ class CustomFanModeRow extends LitElement {
 			}
 		} else {
 			if (mode1 == 'on') {
-				mode1color = 'background-color: var(--ha-switch-checked-background-color-hover, var(--ha-switch-checked-background-color, var(--ha-color-fill-primary-normal-hover)))';
+				mode1color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
 				mode1color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (mode2 == 'on') {
-				mode2color = 'background-color: var(--ha-switch-checked-background-color-hover, var(--ha-switch-checked-background-color, var(--ha-color-fill-primary-normal-hover)))';
+				mode2color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
 				mode2color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (mode3 == 'on') {
-				mode3color = 'background-color: var(--ha-switch-checked-background-color-hover, var(--ha-switch-checked-background-color, var(--ha-color-fill-primary-normal-hover)))';
+				mode3color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
 				mode3color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
