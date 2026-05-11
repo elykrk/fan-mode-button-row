@@ -92,8 +92,8 @@ class CustomFanModeRow extends LitElement {
 			.mode {
 				margin-left: 2px;
 				margin-right: 2px;
-				background-color: #759aaa;
-				border: 1px solid lightgrey; 
+				background-color: var(--card-background-color);
+				border: 1px solid var(--divider-color); 
 				border-radius: 4px;
 				font-size: 10px !important;
 				color: inherit;
@@ -264,22 +264,22 @@ class CustomFanModeRow extends LitElement {
 			if (mode1 == 'on') {
 				mode1color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				mode1color = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
+				mode1color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (mode2 == 'on') {
 				mode2color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				mode2color = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
+				mode2color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (mode3 == 'on') {
 				mode3color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				mode3color = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
+				mode3color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (offstate == 'on') {
 				offcolor = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				offcolor = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
+				offcolor = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 		}
 		
