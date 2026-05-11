@@ -40,7 +40,6 @@ class CustomFanModeRow extends LitElement {
 			customModeOneText: 'LOW',
 			customModeTwoText: 'MED',
 			customModeThreeText: 'HIGH',
-			customOffText: 'OFF',
 			customLowText: 'LOW',
 			customMedText: 'MED',
 			customHiText: 'HIGH',
@@ -242,45 +241,45 @@ class CustomFanModeRow extends LitElement {
 				
 		if (custTheme) {
 			if (mode1 == 'on') {
-				mode1color = 'background-color:' + onM1Clr;
+				mode1color = 'background-color: ' + onM1Clr;
 			} else {
-				mode1color = 'background-color:' + buttonOffClr;
+				mode1color = 'background-color: ' + buttonOffClr;
 			}
 			if (mode2 == 'on') {
-				mode2color = 'background-color:'  + onM2Clr;
+				mode2color = 'background-color: '  + onM2Clr;
 			} else {
-				mode2color = 'background-color:' + buttonOffClr;
+				mode2color = 'background-color: ' + buttonOffClr;
 			}
 			if (mode3 == 'on') {
-				mode3color = 'background-color:'  + onM3Clr;
+				mode3color = 'background-color: '  + onM3Clr;
 			} else {
-				mode3color = 'background-color:' + buttonOffClr;
+				mode3color = 'background-color: ' + buttonOffClr;
 			}
 			if (offstate == 'on') {
-				offcolor = 'background-color:'  + offClr;
+				offcolor = 'background-color: '  + offClr;
 			} else {
-				offcolor = 'background-color:' + buttonOffClr;
+				offcolor = 'background-color: ' + buttonOffClr;
 			}
 		} else {
 			if (mode1 == 'on') {
-				mode1color = 'background-color: var(--switch-checked-color)';
+				mode1color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				mode1color = 'background-color: var(--switch-unchecked-color)';
+				mode1color = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
 			}
 			if (mode2 == 'on') {
-				mode2color = 'background-color: var(--switch-checked-color)';
+				mode2color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				mode2color = 'background-color: var(--switch-unchecked-color)';
+				mode2color = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
 			}
 			if (mode3 == 'on') {
-				mode3color = 'background-color: var(--switch-checked-color)';
+				mode3color = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				mode3color = 'background-color: var(--switch-unchecked-color)';
+				mode3color = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
 			}
 			if (offstate == 'on') {
-				offcolor = 'background-color: var(--switch-checked-color)';
+				offcolor = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
 			} else {
-				offcolor = 'background-color: var(--switch-unchecked-color)';
+				offcolor = 'background-color: var(--switch-unchecked-color, var(--disabled-text-color, #759aaa))';
 			}
 		}
 		
@@ -312,10 +311,10 @@ class CustomFanModeRow extends LitElement {
 		let buttonwidth = buttonWidth;
 		let buttonheight = buttonHeight;
 		
-		let offname = 'off'
-		let m1name = 'mode1'
-		let m2name = 'mode2'
-		let m3name = 'mode3'
+		let offname = 'off';
+		let m1name = 'mode1';
+		let m2name = 'mode2';
+		let m3name = 'mode3';
 		
 		if (revButtons) {
 			this._stateObj = stateObj;
