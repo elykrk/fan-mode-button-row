@@ -262,17 +262,17 @@ class CustomFanModeRow extends LitElement {
 			}
 		} else {
 			if (mode1 == 'on') {
-				mode1color = 'background-color: var(--state-active-color)';
+				mode1color = 'background-color: var(--background-color)';
 			} else {
 				mode1color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (mode2 == 'on') {
-				mode2color = 'background-color: var(--state-active-color)';
+				mode2color = 'background-color: var(--background-color)';
 			} else {
 				mode2color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (mode3 == 'on') {
-				mode3color = 'background-color: var(--state-active-color)';
+				mode3color = 'background-color: var(--background-color)';
 			} else {
 				mode3color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
