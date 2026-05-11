@@ -277,9 +277,7 @@ class CustomFanModeRow extends LitElement {
 				mode3color = 'background-color: var(--ha-card-background, var(--card-background-color))';
 			}
 			if (offstate == 'on') {
-				offcolor = 'background-color: var(--switch-checked-color, var(--state-active-color, var(--primary-color, #43A047)))';
-			} else {
-				offcolor = 'background-color: var(--ha-card-background, var(--card-background-color))';
+				offcolor = 'background-color: var(--ha-card-background, var(--card-background-color)); color: var(--secondary-text-color)';
 			}
 		}
 		
